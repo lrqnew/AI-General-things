@@ -1,0 +1,24 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/content/content",
+        "pages/car/car",
+        "pages/animal/animal",
+        "pages/plan/plan",
+        "pages/tongyong/tongyong",
+        "pages/face/face",
+        "pages/phone/phone",
+        "pages/caipu/caipu",
+        "pages/caipuInfo/caipuInfo",
+        "pages/font/font",
+        "pages/about/about",
+        "pages/about/help",
+        "pages/foodXk/foodXk"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#222222",
+        "navigationBarTitleText": "AI识物",
+        "navigationBarTextStyle": "#fff"
+    }
+}

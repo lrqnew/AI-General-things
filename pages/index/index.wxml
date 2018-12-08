@@ -1,0 +1,60 @@
+<view class="container">
+    <view id="box">
+        <view class="big">
+            <view class="btn">
+                <button bindtap="Dishes" size="mini">菜品识别</button>
+            </view>
+            <view class="btn">
+                <button bindtap="CarDetect" size="mini">车型识别</button>
+            </view>
+            <view class="btn">
+                <button bindtap="AnimalDetect" size="mini">动物识别</button>
+            </view>
+        </view>
+        <view class="big">
+            <view class="btn" size="mini">
+                <button bindtap="PlantDetect" size="mini">植物识别</button>
+            </view>
+            <view class="btn">
+                <button bindtap="AdvancedGeneral" size="mini">物品识别</button>
+            </view>
+            <view class="btn">
+                <button bindtap="Face" class="zan" size="mini">人脸检测</button>
+            </view>
+        </view>
+        <view class="big">
+            <view class="btn">
+                <button bindtap="foodXk" size="mini">食物相克</button>
+            </view>
+            <view class="btn">
+                <button bindtap="PhoneInfo" size="mini">手机信息</button>
+            </view>
+            <view class="btn">
+                <view class="section">
+                    <picker bindchange="bindPickerChange" range="{{array}}" value="{{index}}">
+                        <view class="picker">
+                            <button bindtap="font" size="mini">文字识别</button>
+                        </view>
+                    </picker>
+                </view>
+            </view>
+        </view>
+        <view class="big">
+            <view class="btn">
+                <button bindtap="time" size="mini">剩余时间</button>
+            </view>
+            <view class="btn">
+                <button bindtap="music" size="mini">催眠音乐</button>
+            </view>
+            <view class="btn">
+                <button bindtap="about" size="mini">关于识物</button>
+            </view>
+        </view>
+    </view>
+    <view style="margin-top:200rpx;">
+        <button bindtap="zan" class="zan" size="mini">支持</button>
+    </view>
+    <view style="width:100%;height:100%;padding-top:106rpx;">
+        <ad unitId="adunit-3c3c05d7e6388f8d"></ad>
+    </view>
+</view>

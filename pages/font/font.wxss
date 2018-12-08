@@ -1,0 +1,28 @@
+.container {
+    background: #fff;
+}
+
+.img {
+    width: 100%;
+    height: 570rpx;
+    margin-top: -200rpx;
+    background-color: #dadada;
+}
+
+image {
+    width: 100%;
+    height: 570rpx;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+text {
+    color: blue;
+    font-size: 28rpx;
+}
+
+.info {
+    width: 90%;
+    margin-top: 10rpx;
+}

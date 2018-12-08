@@ -1,0 +1,32 @@
+<import src="../../wxParse/wxParse.wxml"></import>
+<view class="container">
+    <image class="banner" src="{{image}}"></image>
+    <view class="wxParse" style="color:#FF6100;margin-top:30rpx;">
+        <template is="wxParse" data="{{wxParseData:content.nodes}}"></template>
+        <view class="table">
+            <view>食材：</view>
+            <view class="tr" wx:for="{{material}}">
+                <view class="td">{{item.mname}}</view>
+                <view class="td">{{item.amount}}</view>
+            </view>
+            <view class="tr">
+                <view class="td">适用人数</view>
+                <view class="td">{{peoplenum}}</view>
+            </view>
+            <view class="tr">
+                <view class="td">烹调时间</view>
+                <view class="td">{{preparetime}}</view>
+            </view>
+        </view>
+        <view style="margin-top: 20rpx;">做法：</view>
+        <view style="margin-top: 20rpx;" wx:for="{{process}}">
+         {{index+1}}、{{item.pcontent}}
+         <view class="img">
+                <image src="{{item.pic}}"></image>
+            </view>
+        </view>
+    </view>
+    <view style="width:100%;height:100%;padding-top:106rpx;">
+        <ad unitId="adunit-84e6916312b7a110"></ad>
+    </view>
+</view>

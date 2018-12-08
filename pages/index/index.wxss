@@ -1,0 +1,91 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 200rpx 0;
+    box-sizing: border-box;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://wx.oneint.cn/images/bg.jpg");
+    margin: 0px;
+    background-size: 100% 100%;
+}
+
+.zan {
+    border: 1px solid #fff;
+    background: 0;
+    color: #fff;
+}
+
+.btn {
+    width: 100%;
+    padding: 20rpx;
+}
+
+button {
+    border: 1px solid #fff;
+    background: 0;
+    color: #fff;
+}
+
+.big {
+    display: flex;
+    flex-direction: row;
+}
+
+#box {
+    margin-top: -100rpx;
+}
+
+.overlay {
+    position: fixed;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    text-align: center;
+}
+
+.overlay .lay {
+    width: 580rpx;
+    background: #fff;
+    margin: auto;
+    border-radius: 16rpx;
+    margin-top: 200rpx;
+    overflow: hidden;
+    position: relative;
+}
+
+.overlay image {
+    width: 100%;
+    height: 340rpx;
+    display: block;
+}
+
+.overlay .title {
+    font-size: 28rpx;
+    text-align: center;
+    margin-bottom: 46rpx;
+    color: #000;
+}
+
+.overlay .close {
+    position: relative;
+    top: 40rpx;
+    width: 68rpx;
+    height: 68rpx;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.overlay .close image {
+    width: 36rpx;
+    height: 36rpx;
+    display: block;
+    margin: 16rpx;
+}

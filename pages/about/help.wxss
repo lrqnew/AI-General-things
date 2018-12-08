@@ -1,0 +1,9 @@
+@import "about.wxss";
+
+.tip {
+    width: 85%;
+    margin: auto;
+    font-size: 20rpx;
+    color: #999;
+    margin-top: 16rpx;
+}

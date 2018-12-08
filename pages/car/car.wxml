@@ -1,0 +1,23 @@
+<view class="container">
+    <view class="img">
+        <image src="{{img}}"></image>
+    </view>
+    <view class="info">
+        <view class="table">
+            <text style="font-size:38rpx;">识别结果</text>
+            <view class="tr">
+                <view class="th">品牌</view>
+                <view class="th">年份</view>
+                <view class="th">相似度</view>
+            </view>
+            <view class="tr" wx:for="{{testData}}">
+                <view class="td"> {{item.name}} </view>
+                <view class="td">{{item.year}} </view>
+                <view class="td">{{score[index]}}%</view>
+            </view>
+        </view>
+        <view style="width:100%;height:100%;padding-top:106rpx;">
+            <ad unitId="adunit-45a1b12918736e19"></ad>
+        </view>
+    </view>
+</view>

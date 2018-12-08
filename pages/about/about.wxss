@@ -1,0 +1,159 @@
+view {
+    font-size: 26rpx;
+    color: #666;
+}
+
+.img {
+    text-align: center;
+    margin-top: 60rpx;
+}
+
+.img image {
+    width: 120rpx;
+    height: 120rpx;
+    background: #f5f5f5;
+    border-radius: 50%;
+}
+
+.tag {
+    font-size: 32rpx;
+    color: #000;
+    font-weight: bold;
+    width: 92%;
+    margin: auto;
+    margin-top: 50rpx;
+}
+
+.tag text {
+    vertical-align: middle;
+}
+
+.tag .dot {
+    color: #1aad19;
+    font-size: 32rpx;
+    margin-right: 8rpx;
+}
+
+.text {
+    width: 85%;
+    margin: auto;
+    line-height: 1.6;
+    margin-top: 12rpx;
+}
+
+.link {
+    color: #1aad19;
+    text-decoration: underline;
+}
+
+.more {
+    text-align: center;
+    color: #999;
+    margin-top: 60rpx;
+}
+
+.cont {
+    text-align: center;
+    margin-top: 26rpx;
+}
+
+.btn {
+    width: 240rpx;
+    background: #1aad19;
+    color: #fff;
+    text-align: center;
+    line-height: 68rpx;
+    font-size: 28rpx;
+    border-radius: 16rpx;
+    display: inline-block;
+    margin: 0 16rpx;
+}
+
+.btn image {
+    width: 40rpx;
+    height: 40rpx;
+    vertical-align: middle;
+    margin-right: 8rpx;
+}
+
+.btn text {
+    vertical-align: middle;
+}
+
+.btn2 {
+    background: #f06759;
+}
+
+.btn3 image {
+    width: 32rpx;
+}
+
+.btn3 button {
+    display: inline-block;
+    font-size: 28rpx;
+    background: none;
+    height: 68rpx;
+    line-height: 68rpx;
+    color: #fff;
+    padding: 0;
+    vertical-align: middle;
+}
+
+.btn3 button::after {
+    border: none;
+}
+
+navigator:hover {
+    background: none;
+}
+
+.overlay {
+    position: fixed;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    text-align: center;
+}
+
+.overlay .lay {
+    width: 580rpx;
+    background: #fff;
+    margin: auto;
+    border-radius: 16rpx;
+    margin-top: 200rpx;
+    overflow: hidden;
+    position: relative;
+}
+
+.overlay image {
+    width: 100%;
+    height: 340rpx;
+    display: block;
+}
+
+.overlay .title {
+    font-size: 28rpx;
+    text-align: center;
+    margin-bottom: 46rpx;
+    color: #000;
+}
+
+.overlay .close {
+    position: relative;
+    top: 40rpx;
+    width: 68rpx;
+    height: 68rpx;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.overlay .close image {
+    width: 36rpx;
+    height: 36rpx;
+    display: block;
+    margin: 16rpx;
+}

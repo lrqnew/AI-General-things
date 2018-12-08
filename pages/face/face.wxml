@@ -1,0 +1,45 @@
+<view class="container">
+    <view class="img">
+        <image src="{{img}}"></image>
+    </view>
+    <view class="info">
+        <view class="table">
+            <text style="font-size:38rpx;">识别结果</text>
+            <view class="tr">
+                <view class="td">年龄</view>
+                <view class="td"> {{age}} </view>
+            </view>
+            <view class="tr">
+                <view class="td">性别</view>
+                <view class="td"> {{sex}} </view>
+            </view>
+            <view class="tr">
+                <view class="td">种族</view>
+                <view class="td"> {{zhongzu}} </view>
+            </view>
+            <view class="tr">
+                <view class="td">颜值</view>
+                <view class="td"> {{beauty}} 分 </view>
+            </view>
+            <view class="tr">
+                <view class="td">表情</view>
+                <view class="td"> {{expression}} </view>
+            </view>
+            <view class="tr">
+                <view class="td">眼镜</view>
+                <view class="td"> {{glasses}} </view>
+            </view>
+            <view class="tr">
+                <view class="td">脸型</view>
+                <view class="td"> {{face_shape}} </view>
+            </view>
+            <view class="tr">
+                <view class="td">类型</view>
+                <view class="td"> {{face_type}} </view>
+            </view>
+        </view>
+        <view style="width:100%;height:100%;padding-top:106rpx;">
+            <ad unitId="adunit-41d326ad623d28d5"></ad>
+        </view>
+    </view>
+</view>

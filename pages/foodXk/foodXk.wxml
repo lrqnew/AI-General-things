@@ -1,0 +1,49 @@
+<view class="container">
+    <view class="top">
+        <view class="searchItem">
+            <icon size="20" type="search"></icon>
+            <input bindinput="bindKeyInput" placeholder="请输入食物1"></input>
+        </view>
+        <view class="btn">
+            <button bindtap="search"></button>
+        </view>
+    </view>
+    <view class="top1">
+        <view class="searchItem">
+            <icon size="20" type="search"></icon>
+            <input bindinput="bindKeyInput1" placeholder="请输入食物2"></input>
+        </view>
+        <view class="btn">
+            <button bindtap="food">查询</button>
+        </view>
+    </view>
+</view>
+<view class="schoollist">
+    <view class="school-list" wx:for="{{list}}" wx:key="index">
+        <view class="school-list-info" index="{{index}}">
+            <image class="school-list-photo" src="{{item.pic}}"></image>
+            <text class="school-list-desc">【食物类别】：{{item.food1}}</text>
+        </view>
+    </view>
+    <view class="school-list" wx:for="{{list}}" wx:key="index">
+        <view class="school-list-info" index="{{index}}">
+            <image class="school-list-photo" src="{{item.pic}}"></image>
+            <text class="school-list-desc">【食物类别】：{{item.food2}}</text>
+        </view>
+    </view>
+    <view class="school-list" wx:for="{{list}}" wx:key="index">
+        <view class="school-list-info" index="{{index}}">
+            <image class="school-list-photo" src="{{item.pic}}"></image>
+            <text class="school-list-desc">【功能】：{{item.function}}</text>
+        </view>
+    </view>
+    <view class="school-list" wx:for="{{list}}" wx:key="index">
+        <view class="school-list-info" index="{{index}}">
+            <image class="school-list-photo" src="{{item.pic}}"></image>
+            <text class="school-list-desc">【一起吃好不好】：{{item.isGood}}【0表示不好，1表示好】</text>
+        </view>
+    </view>
+    <view style="width:100%;height:100%;padding-top:106rpx;">
+        <ad unitId="adunit-6bd99872b1e9ff1c"></ad>
+    </view>
+</view>

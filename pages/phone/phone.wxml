@@ -1,0 +1,65 @@
+<view class="container">
+    <view class="info">
+        <view class="table">
+            <view class="tr">
+                <view class="td">手机品牌</view>
+                <view class="td"> {{brand}} </view>
+            </view>
+            <view class="tr">
+                <view class="td">手机型号</view>
+                <view class="td"> {{model}} </view>
+            </view>
+            <view class="tr">
+                <view class="td">设备像素比</view>
+                <view class="td"> {{pixelRatio}} </view>
+            </view>
+            <view class="tr">
+                <view class="td">屏幕宽度</view>
+                <view class="td"> {{screenWidth}}</view>
+            </view>
+            <view class="tr">
+                <view class="td">屏幕高度</view>
+                <view class="td"> {{screenHeight}} </view>
+            </view>
+            <view class="tr">
+                <view class="td">可使用窗口宽度</view>
+                <view class="td"> {{windowWidth}} </view>
+            </view>
+            <view class="tr">
+                <view class="td">可使用窗口高度</view>
+                <view class="td"> {{windowHeight}} </view>
+            </view>
+            <view class="tr">
+                <view class="td">状态栏的高度</view>
+                <view class="td"> {{statusBarHeight}} </view>
+            </view>
+            <view class="tr">
+                <view class="td">微信设置的语言</view>
+                <view class="td"> {{language}} </view>
+            </view>
+            <view class="tr">
+                <view class="td">微信版本号</view>
+                <view class="td"> {{version}} </view>
+            </view>
+            <view class="tr">
+                <view class="td">操作系统版本</view>
+                <view class="td"> {{system}} </view>
+            </view>
+            <view class="tr">
+                <view class="td">客户端平台</view>
+                <view class="td"> {{platform}} </view>
+            </view>
+            <view class="tr">
+                <view class="td">用户字体大小</view>
+                <view class="td"> {{fontSizeSetting}} </view>
+            </view>
+            <view class="tr">
+                <view class="td">客户端基础库版本</view>
+                <view class="td"> {{SDKVersion}} </view>
+            </view>
+        </view>
+        <view style="width:100%;height:100%;padding-top:106rpx;">
+            <ad unitId="adunit-88fbcde3edf3dd48"></ad>
+        </view>
+    </view>
+</view>

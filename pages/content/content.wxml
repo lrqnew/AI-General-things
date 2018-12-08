@@ -1,0 +1,23 @@
+<view class="container">
+    <view class="img">
+        <image src="{{img}}"></image>
+    </view>
+    <view class="info">
+        <view class="table">
+            <text style="font-size:38rpx;">识别结果</text>
+            <view class="tr">
+                <view class="th">名称</view>
+                <view class="th">卡路里</view>
+                <view class="th">相似度</view>
+            </view>
+            <view class="tr" wx:for="{{testData}}">
+                <view class="td"> {{item.name}} </view>
+                <view class="td">{{item.calorie}} </view>
+                <view class="td">{{probability[index]}}%</view>
+            </view>
+        </view>
+        <view style="width:100%;height:100%;padding-top:106rpx;">
+            <ad unitId="adunit-a1471d2381ef4931"></ad>
+        </view>
+    </view>
+</view>

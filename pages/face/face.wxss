@@ -1,0 +1,46 @@
+.container {
+    background: #fff;
+}
+
+.img {
+    width: 100%;
+    height: 570rpx;
+    margin-top: -200rpx;
+    background-color: #dadada;
+}
+
+image {
+    width: 60%;
+    height: 80%;
+    margin: 7% auto;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 5%;
+}
+
+.table {
+    width: 100%;
+    height: 100%;
+    margin-top: 50rpx;
+}
+
+.tr {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #dadada;
+    margin-top: 15rpx;
+    border-radius: 10rpx;
+}
+
+.th,.td {
+    padding: 20rpx;
+    text-align: center;
+    width: 280rpx;
+    font-size: 28rpx;
+    color: blue;
+}
+
+.th {
+    color: #000;
+}
