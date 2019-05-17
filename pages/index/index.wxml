@@ -24,12 +24,18 @@
         </view>
         <view class="big">
             <view class="btn">
+                <button bindtap="caipu" size="mini">菜谱大全</button>
+            </view>
+            <view class="btn">
                 <button bindtap="foodXk" size="mini">食物相克</button>
             </view>
             <view class="btn">
                 <button bindtap="PhoneInfo" size="mini">手机信息</button>
             </view>
-            <view class="btn">
+         
+        </view>
+        <view class="big">
+           <view class="btn">
                 <view class="section">
                     <picker bindchange="bindPickerChange" range="{{array}}" value="{{index}}">
                         <view class="picker">
@@ -38,14 +44,15 @@
                     </picker>
                 </view>
             </view>
-        </view>
-        <view class="big">
             <view class="btn">
                 <button bindtap="time" size="mini">剩余时间</button>
             </view>
             <view class="btn">
                 <button bindtap="music" size="mini">催眠音乐</button>
             </view>
+        </view>
+
+        <view class="big">
             <view class="btn">
                 <button bindtap="about" size="mini">关于识物</button>
             </view>

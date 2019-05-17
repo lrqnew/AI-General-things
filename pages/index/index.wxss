@@ -8,7 +8,7 @@
     position: fixed;
     width: 100%;
     height: 100%;
-    background-image: url("https://wx.oneint.cn/images/bg.jpg");
+    background-image: url("https://wx.wicode.cn/images/bg.jpg");
     margin: 0px;
     background-size: 100% 100%;
 }

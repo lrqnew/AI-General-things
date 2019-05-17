@@ -33,7 +33,7 @@ Page({
         } ],
         index: 0,
         lang: "",
-        imgalist: [ "https://wx.oneint.cn/images/code.jpg" ]
+        imgalist: [ "https://wx.wicode.cn/images/code.jpg" ]
     },
     previewImage: function(a) {
         wx.previewImage({
@@ -61,7 +61,7 @@ Page({
                 getApp().globalData.img = e, wx.showLoading({
                     title: "正在识别"
                 }), wx.uploadFile({
-                    url: "https://wx.oneint.cn/DishDetect.ashx",
+                  url: "https://wx.wicode.cn/DishDetect.ashx",
                     filePath: e[0],
                     name: "file",
                     formData: {
@@ -86,7 +86,7 @@ Page({
                 getApp().globalData.img = e, wx.showLoading({
                     title: "正在识别"
                 }), wx.uploadFile({
-                    url: "https://wx.oneint.cn/CarDetect.ashx",
+                  url: "https://wx.wicode.cn/CarDetect.ashx",
                     filePath: e[0],
                     name: "file",
                     formData: {
@@ -111,7 +111,7 @@ Page({
                 getApp().globalData.img = e, wx.showLoading({
                     title: "正在识别"
                 }), wx.uploadFile({
-                    url: "https://wx.oneint.cn/AnimalDetect.ashx",
+                  url: "https://wx.wicode.cn/AnimalDetect.ashx",
                     filePath: e[0],
                     name: "file",
                     formData: {
@@ -136,7 +136,7 @@ Page({
                 getApp().globalData.img = e, wx.showLoading({
                     title: "正在识别"
                 }), wx.uploadFile({
-                    url: "https://wx.oneint.cn/PlantDetect.ashx",
+                  url: "https://wx.wicode.cn/PlantDetect.ashx",
                     filePath: e[0],
                     name: "file",
                     formData: {
@@ -163,7 +163,7 @@ Page({
                 getApp().globalData.img = e, wx.showLoading({
                     title: "正在识别"
                 }), wx.uploadFile({
-                    url: "https://wx.oneint.cn/AdvancedGeneral.ashx",
+                  url: "https://wx.wicode.cn/AdvancedGeneral.ashx",
                     filePath: e[0],
                     name: "file",
                     formData: {
@@ -190,7 +190,7 @@ Page({
                 getApp().globalData.img = e, wx.showLoading({
                     title: "正在识别"
                 }), wx.uploadFile({
-                    url: "https://wx.oneint.cn/face.ashx",
+                  url: "https://wx.wicode.cn/face.ashx",
                     filePath: e[0],
                     name: "file",
                     formData: {
@@ -271,7 +271,7 @@ Page({
                 getApp().globalData.img = t, wx.showLoading({
                     title: "正在识别"
                 }), wx.uploadFile({
-                    url: "https://wx.oneint.cn/Wenzi.ashx?lang=" + e.data.lang,
+                    url: "https://wx.wicode.cn/Wenzi.ashx?lang=" + e.data.lang,
                     filePath: t[0],
                     name: "file",
                     formData: {
