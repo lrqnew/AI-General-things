@@ -1,0 +1,25 @@
+<view class='big'>
+    <view class="pic">
+      <view class="img">
+        <swiper class='slid'>
+          <block>
+            <swiper-item>
+
+
+              <view class='headView'>
+                <image class='icon' src="../../pages/images/cpsb1.jpg"></image>
+                <view class='icon'></view>
+              </view>
+              <view class='detail'>
+                <view class='userName'>牛油果沙拉</view>
+                牛油果沙拉是一道菜品，主料是牛油果、苹果、土司，配料为玉米粒、番茄干，制作方法为土司掰小块，加热至硬脆，苹果切小丁，番茄干撕小片，加入各种调料，牛油果剖开，填入沙拉即可。
+              </view>
+            </swiper-item>
+
+          </block>
+        </swiper>
+      </view>
+    </view>
+
+
+</view>

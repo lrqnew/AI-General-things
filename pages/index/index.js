@@ -33,8 +33,9 @@ Page({
         } ],
         index: 0,
         lang: "",
-        imgalist: [ "https://wx.wicode.cn/images/code.jpg" ]
+        imgalist: [ "https://wx.wicode.cn/images/code.jpg" ],
     },
+
     previewImage: function(a) {
         wx.previewImage({
             current: this.data.imgalist,
@@ -52,29 +53,32 @@ Page({
         });
     },
     Dishes: function(a) {
-        wx.chooseImage({
-            count: 1,
-            sizeType: [ "original", "compressed" ],
-            sourceType: [ "album", "camera" ],
-            success: function(a) {
-                var e = a.tempFilePaths;
-                getApp().globalData.img = e, wx.showLoading({
-                    title: "正在识别"
-                }), wx.uploadFile({
-                  url: "https://wx.wicode.cn/DishDetect.ashx",
-                    filePath: e[0],
-                    name: "file",
-                    formData: {
-                        user: "test"
-                    },
-                    success: function(a) {
-                        wx.hideLoading(), wx.navigateTo({
-                            url: "../content/content?list=" + a.data
-                        });
-                    }
-                });
-            }
-        });
+      wx.navigateTo({
+        url: "../cpsbIndex/cpsbIndex"
+      });
+        // wx.chooseImage({
+        //     count: 1,
+        //     sizeType: [ "original", "compressed" ],
+        //     sourceType: [ "album", "camera" ],
+        //     success: function(a) {
+        //         var e = a.tempFilePaths;
+        //         getApp().globalData.img = e, wx.showLoading({
+        //             title: "正在识别"
+        //         }), wx.uploadFile({
+        //           url: "https://wx.wicode.cn/DishDetect.ashx",
+        //             filePath: e[0],
+        //             name: "file",
+        //             formData: {
+        //                 user: "test"
+        //             },
+        //             success: function(a) {
+        //                 wx.hideLoading(), wx.navigateTo({
+        //                     url: "../content/content?list=" + a.data
+        //                 });
+        //             }
+        //         });
+        //     }
+        // });
     },
     CarDetect: function(a) {
         wx.chooseImage({
@@ -271,7 +275,7 @@ Page({
                 getApp().globalData.img = t, wx.showLoading({
                     title: "正在识别"
                 }), wx.uploadFile({
-                    url: "https://wx.wicode.cn/Wenzi.ashx?lang=" + e.data.lang,
+                  url: "https://wx.wicode.cn/Wenzi.ashx?lang=" + e.data.lang,
                     filePath: t[0],
                     name: "file",
                     formData: {
@@ -285,13 +289,5 @@ Page({
                 });
             }
         });
-    },
-    onLoad: function(a) {},
-    onReady: function() {},
-    onShow: function() {},
-    onHide: function() {},
-    onUnload: function() {},
-    onPullDownRefresh: function() {},
-    onReachBottom: function() {},
-    onShareAppMessage: function() {}
+    }
 });

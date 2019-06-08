@@ -42,13 +42,5 @@ Page({
                 }), wx.hideLoading()), console.log(n.data.result[0]);
             }
         });
-    },
-    onLoad: function(t) {},
-    onReady: function() {},
-    onShow: function() {},
-    onHide: function() {},
-    onUnload: function() {},
-    onPullDownRefresh: function() {},
-    onReachBottom: function() {},
-    onShareAppMessage: function() {}
+    }
 });

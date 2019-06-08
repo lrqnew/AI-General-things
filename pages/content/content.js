@@ -18,12 +18,5 @@ Page({
         this.setData({
             probability: o
         }), console.log(this.data.probability);
-    },
-    onReady: function() {},
-    onShow: function() {},
-    onHide: function() {},
-    onUnload: function() {},
-    onPullDownRefresh: function() {},
-    onReachBottom: function() {},
-    onShareAppMessage: function() {}
+    }
 });

@@ -29,7 +29,13 @@ Page({
             }
         });
     },
-    onLoad: function(t) {},
+    onLoad: function(t) {
+      let that=this;
+      that.setData({
+        inputValue:'炒鸡蛋'
+      });
+      that.search();
+    },
     onReady: function() {},
     onShow: function() {},
     onHide: function() {},

@@ -1,4 +1,70 @@
-<view class="container">
+<i-notice-bar icon="systemprompt" loop speed="2000">
+  AI识物 2.0 全新版本，正式上线！
+</i-notice-bar>
+<i-grid>
+  <i-grid-item bindtap="Dishes">
+    <i-grid-icon>
+      <image src="../images/cp.png" />
+    </i-grid-icon>
+    <i-grid-label>菜品识别</i-grid-label>
+  </i-grid-item>
+  <i-grid-item bindtap="CarDetect">
+    <i-grid-icon>
+      <image src="../images/cx.png" />
+    </i-grid-icon>
+    <i-grid-label>车型识别</i-grid-label>
+  </i-grid-item>
+  <i-grid-item bindtap="AnimalDetect">
+    <i-grid-icon>
+      <image src="../images/dw.png" />
+    </i-grid-icon>
+    <i-grid-label>动物识别</i-grid-label>
+  </i-grid-item>
+</i-grid>
+<i-grid>
+  <i-grid-item bindtap="PlantDetect">
+    <i-grid-icon>
+      <image src="../images/zw.png" />
+    </i-grid-icon>
+    <i-grid-label>植物识别</i-grid-label>
+  </i-grid-item>
+  <i-grid-item bindtap="AdvancedGeneral">
+    <i-grid-icon>
+      <image src="../images/wp.png" />
+    </i-grid-icon>
+    <i-grid-label>物品识别</i-grid-label>
+  </i-grid-item>
+  <i-grid-item bindtap="Face">
+    <i-grid-icon>
+      <image src="../images/rl.png" />
+    </i-grid-icon>
+    <i-grid-label>人脸检测</i-grid-label>
+  </i-grid-item>
+</i-grid>
+<i-grid>
+  <i-grid-item >
+   
+    <picker bindchange="bindPickerChange" range="{{array}}" value="{{index}}">
+     <i-grid-icon>
+      <image src="../images/wz.png" />
+    </i-grid-icon>
+      <i-grid-label>文字识别</i-grid-label>
+    </picker>
+  </i-grid-item>
+  <i-grid-item bindtap="foodXk">
+    <i-grid-icon>
+      <image src="../images/swxk.png" />
+    </i-grid-icon>
+    <i-grid-label>食物相克</i-grid-label>
+  </i-grid-item>
+  <i-grid-item bindtap="caipu">
+    <i-grid-icon>
+      <image src="../images/cpdq.png" />
+    </i-grid-icon>
+    <i-grid-label>菜谱大全</i-grid-label>
+  </i-grid-item>
+</i-grid>
+<!-- <view class="container">
     <view id="box">
         <view class="big">
             <view class="btn">
@@ -24,18 +90,12 @@
         </view>
         <view class="big">
             <view class="btn">
-                <button bindtap="caipu" size="mini">菜谱大全</button>
-            </view>
-            <view class="btn">
                 <button bindtap="foodXk" size="mini">食物相克</button>
             </view>
             <view class="btn">
                 <button bindtap="PhoneInfo" size="mini">手机信息</button>
             </view>
-         
-        </view>
-        <view class="big">
-           <view class="btn">
+            <view class="btn">
                 <view class="section">
                     <picker bindchange="bindPickerChange" range="{{array}}" value="{{index}}">
                         <view class="picker">
@@ -44,18 +104,24 @@
                     </picker>
                 </view>
             </view>
+        </view>
+        <view class="big">
             <view class="btn">
                 <button bindtap="time" size="mini">剩余时间</button>
             </view>
             <view class="btn">
                 <button bindtap="music" size="mini">催眠音乐</button>
             </view>
-        </view>
-
-        <view class="big">
             <view class="btn">
                 <button bindtap="about" size="mini">关于识物</button>
             </view>
+        </view>
+
+          <view class="big">
+            <view class="btn">
+                <button bindtap="caipu" size="mini">菜谱大全</button>
+            </view>
+          
         </view>
     </view>
     <view style="margin-top:200rpx;">
@@ -64,4 +130,4 @@
     <view style="width:100%;height:100%;padding-top:106rpx;">
         <ad unitId="adunit-3c3c05d7e6388f8d"></ad>
     </view>
-</view>
+</view> -->

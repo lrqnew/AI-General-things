@@ -30,12 +30,5 @@ Page({
         this.setData({
             text: n.toString()
         }), console.log(this.data.text);
-    },
-    onReady: function() {},
-    onShow: function() {},
-    onHide: function() {},
-    onUnload: function() {},
-    onPullDownRefresh: function() {},
-    onReachBottom: function() {},
-    onShareAppMessage: function() {}
+    }
 });

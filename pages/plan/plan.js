@@ -18,12 +18,5 @@ Page({
         this.setData({
             score: o
         }), console.log(this.data.testData);
-    },
-    onReady: function() {},
-    onShow: function() {},
-    onHide: function() {},
-    onUnload: function() {},
-    onPullDownRefresh: function() {},
-    onReachBottom: function() {},
-    onShareAppMessage: function() {}
+    }
 });

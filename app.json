@@ -13,13 +13,31 @@
     "pages/font/font",
     "pages/about/about",
     "pages/about/help",
-    "pages/foodXk/foodXk"
+    "pages/foodXk/foodXk",
+    "pages/cpsbIndex/cpsbIndex"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#222222",
+    "navigationBarBackgroundColor": "#5cadff",
     "navigationBarTitleText": "AI识物",
     "navigationBarTextStyle": "white"
   },
-  "sitemapLocation": "sitemap.json"
+  "tabBar": {
+    "color": "#333",
+    "selectedColor": "#5cadff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "pages/images/home.png",
+        "selectedIconPath": "pages/images/home3.png"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "text": "关于",
+        "iconPath": "pages/images/user.png",
+        "selectedIconPath": "pages/images/user3.png"
+      }
+    ]
+  }
 }

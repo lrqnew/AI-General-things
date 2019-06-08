@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+      "i-avatar": "../../dist/avatar/index"
+  },
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fedf9c",
+    "navigationBarTitleText": "菜品识别",
+    "navigationBarTextStyle": "white"
+  
+}

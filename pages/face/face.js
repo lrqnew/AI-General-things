@@ -57,12 +57,5 @@ Page({
         }) : this.setData({
             face_type: "卡通人脸"
         });
-    },
-    onReady: function() {},
-    onShow: function() {},
-    onHide: function() {},
-    onUnload: function() {},
-    onPullDownRefresh: function() {},
-    onReachBottom: function() {},
-    onShareAppMessage: function() {}
+    }
 });
