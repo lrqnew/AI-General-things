@@ -1,2 +1,41 @@
-<!--pages/dwsbIndex/dwsbIndex.wxml-->
-<text>pages/dwsbIndex/dwsbIndex.wxml</text>
+<view class='big'>
+  <view class="pic">
+    <view class="img">
+      <swiper class='slid' autoplay="true" interval="2000">
+        <block>
+          <swiper-item >
+            <view class='headView'>
+              <image class='icon' src="http://img3.imgtn.bdimg.com/it/u=3260574443,1660340522&fm=26&gp=0.jpg"></image>
+              <view class='icon'></view>
+            </view>
+            <view class='detail'>
+              <view class='userName'>哈士奇</view>
+              哈士奇名字的由来，是源自其独特的嘶哑声。哈士奇性格多变，有的极端胆小，也有的极端暴力，进入大陆和家庭的哈士奇，都已经没有了这种极端的性格，比较温顺，是一种流行于全球的宠物犬。
+            </view>
+          </swiper-item>
+          <swiper-item>
+            <view class='headView'>
+              <image class='icon' src="http://img5.imgtn.bdimg.com/it/u=4081623527,2435638078&fm=26&gp=0.jpg"></image>
+              <view class='icon'></view>
+            </view>
+            <view class='detail'>
+              <view class='userName'>中华田园猫</view>
+              "中华田园猫"是对中国本土家猫类的统称。多用于驱赶老鼠，保护农作物，现如今也多作为宠物。
+            </view>
+          </swiper-item>
+        </block>
+
+      </swiper>
+      <button bindtap="AnimalDetect" class='btn' id="camera">
+        <i-icon type="camera_fill" size="28" color="#fff" /> 拍照识车
+      </button>
+      <view class='xc' bindtap="AnimalDetect" id="album">
+        <text>从相册选择></text>
+        {{id}}
+      </view>
+    
+    </view>
+  </view>
+
+
+</view>

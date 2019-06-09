@@ -1,7 +1,7 @@
 <view class='big'>
   <view class="pic">
     <view class="img">
-      <swiper class='slid'>
+      <swiper class='slid' autoplay="true" interval="2000">
         <block>
           <swiper-item>
             <view class='headView'>

@@ -63,54 +63,13 @@ Page({
       wx.navigateTo({
         url: "../cxsbIndex/cxsbIndex"
       });
-        // wx.chooseImage({
-        //     count: 1,
-        //     sizeType: [ "original", "compressed" ],
-        //     sourceType: [ "album", "camera" ],
-        //     success: function(a) {
-        //         var e = a.tempFilePaths;
-        //         getApp().globalData.img = e, wx.showLoading({
-        //             title: "正在识别"
-        //         }), wx.uploadFile({
-        //           url: "https://wx.wicode.cn/CarDetect.ashx",
-        //             filePath: e[0],
-        //             name: "file",
-        //             formData: {
-        //                 user: "test"
-        //             },
-        //             success: function(a) {
-        //                 wx.hideLoading(), wx.navigateTo({
-        //                     url: "../car/car?list=" + a.data
-        //                 });
-        //             }
-        //         });
-        //     }
-        // });
     },
+    //跳转动物识别
     AnimalDetect: function(a) {
-        wx.chooseImage({
-            count: 1,
-            sizeType: [ "original", "compressed" ],
-            sourceType: [ "album", "camera" ],
-            success: function(a) {
-                var e = a.tempFilePaths;
-                getApp().globalData.img = e, wx.showLoading({
-                    title: "正在识别"
-                }), wx.uploadFile({
-                  url: "https://wx.wicode.cn/AnimalDetect.ashx",
-                    filePath: e[0],
-                    name: "file",
-                    formData: {
-                        user: "test"
-                    },
-                    success: function(a) {
-                        wx.hideLoading(), wx.navigateTo({
-                            url: "../animal/animal?list=" + a.data
-                        }), console.info(a.data);
-                    }
-                });
-            }
-        });
+      wx.navigateTo({
+        url: "../dwsbIndex/dwsbIndex"
+      });
+      
     },
     PlantDetect: function(a) {
         wx.chooseImage({
