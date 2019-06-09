@@ -52,9 +52,16 @@ Page({
             show: !1
         });
     },
+    //跳转菜品识别
     Dishes: function(a) {
       wx.navigateTo({
         url: "../cpsbIndex/cpsbIndex"
+      });
+    },
+    //跳转车型识别
+    CarDetect: function(a) {
+      wx.navigateTo({
+        url: "../cxsbIndex/cxsbIndex"
       });
         // wx.chooseImage({
         //     count: 1,
@@ -65,7 +72,7 @@ Page({
         //         getApp().globalData.img = e, wx.showLoading({
         //             title: "正在识别"
         //         }), wx.uploadFile({
-        //           url: "https://wx.wicode.cn/DishDetect.ashx",
+        //           url: "https://wx.wicode.cn/CarDetect.ashx",
         //             filePath: e[0],
         //             name: "file",
         //             formData: {
@@ -73,37 +80,12 @@ Page({
         //             },
         //             success: function(a) {
         //                 wx.hideLoading(), wx.navigateTo({
-        //                     url: "../content/content?list=" + a.data
+        //                     url: "../car/car?list=" + a.data
         //                 });
         //             }
         //         });
         //     }
         // });
-    },
-    CarDetect: function(a) {
-        wx.chooseImage({
-            count: 1,
-            sizeType: [ "original", "compressed" ],
-            sourceType: [ "album", "camera" ],
-            success: function(a) {
-                var e = a.tempFilePaths;
-                getApp().globalData.img = e, wx.showLoading({
-                    title: "正在识别"
-                }), wx.uploadFile({
-                  url: "https://wx.wicode.cn/CarDetect.ashx",
-                    filePath: e[0],
-                    name: "file",
-                    formData: {
-                        user: "test"
-                    },
-                    success: function(a) {
-                        wx.hideLoading(), wx.navigateTo({
-                            url: "../car/car?list=" + a.data
-                        });
-                    }
-                });
-            }
-        });
     },
     AnimalDetect: function(a) {
         wx.chooseImage({

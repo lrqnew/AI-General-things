@@ -1,25 +1,41 @@
 <view class='big'>
-    <view class="pic">
-      <view class="img">
-        <swiper class='slid'>
-          <block>
-            <swiper-item>
+  <view class="pic">
+    <view class="img">
+      <swiper class='slid'>
+        <block>
+          <swiper-item>
+            <view class='headView'>
+              <image class='icon' src="../../pages/images/cpsb1.jpg"></image>
+              <view class='icon'></view>
+            </view>
+            <view class='detail'>
+              <view class='userName'>牛油果沙拉</view>
+              牛油果沙拉是一道菜品，主料是牛油果、苹果、土司，配料为玉米粒、番茄干，制作方法为土司掰小块，加热至硬脆，苹果切小丁，番茄干撕小片，加入各种调料，牛油果剖开，填入沙拉即可。
+            </view>
+          </swiper-item>
+          <swiper-item>
+            <view class='headView'>
+              <image class='icon' src="https://gss2.bdstatic.com/9fo3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike150%2C5%2C5%2C150%2C50/sign=e2ede5e06b380cd7f213aabfc02dc651/a6efce1b9d16fdfafdc2dcbeba8f8c5494ee7b37.jpg"></image>
+              <view class='icon'></view>
+            </view>
+            <view class='detail'>
+              <view class='userName'>飞龙汤</view>
+              飞龙又名榛鸡是黑龙江省的名菜之一，属于龙江菜系，产于兴安岭。飞龙汤是将榛鸡脱毛去掉内脏后，用高汤煮熟即可，汤中不需放任何调料以保持汤原汁原味。飞龙汤肉质鲜美，营养丰富，适合用作滋补汤品。
+            </view>
+          </swiper-item>
+        </block>
 
-
-              <view class='headView'>
-                <image class='icon' src="../../pages/images/cpsb1.jpg"></image>
-                <view class='icon'></view>
-              </view>
-              <view class='detail'>
-                <view class='userName'>牛油果沙拉</view>
-                牛油果沙拉是一道菜品，主料是牛油果、苹果、土司，配料为玉米粒、番茄干，制作方法为土司掰小块，加热至硬脆，苹果切小丁，番茄干撕小片，加入各种调料，牛油果剖开，填入沙拉即可。
-              </view>
-            </swiper-item>
-
-          </block>
-        </swiper>
+      </swiper>
+      <button bindtap="Dishes" class='btn' id="camera">
+        <i-icon type="camera_fill" size="28" color="#000" /> 拍照识菜
+      </button>
+      <view class='xc' bindtap="Dishes" id="album">
+        <text>从相册选择></text>
+        {{id}}
       </view>
+    
     </view>
+  </view>
 
 
 </view>

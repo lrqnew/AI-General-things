@@ -1,9 +1,11 @@
 {
   "usingComponents": {
-      "i-avatar": "../../dist/avatar/index"
+      "i-avatar": "../../dist/avatar/index",
+      "i-button": "../../dist/button/index",
+      "i-icon": "../../dist/icon/index"
   },
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fedf9c",
+    "navigationBarBackgroundColor": "#fee38a",
     "navigationBarTitleText": "菜品识别",
     "navigationBarTextStyle": "white"
   

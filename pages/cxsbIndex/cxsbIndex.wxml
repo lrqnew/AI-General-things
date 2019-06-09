@@ -1,0 +1,41 @@
+<view class='big'>
+  <view class="pic">
+    <view class="img">
+      <swiper class='slid'>
+        <block>
+          <swiper-item>
+            <view class='headView'>
+              <image class='icon' src="http://img4.imgtn.bdimg.com/it/u=2398497699,724431259&fm=11&gp=0.jpg"></image>
+              <view class='icon'></view>
+            </view>
+            <view class='detail'>
+              <view class='userName'>宝马 X5</view>
+              厂商指导价：75.99-84.99万元
+            </view>
+          </swiper-item>
+          <swiper-item>
+            <view class='headView'>
+              <image class='icon' src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1405683648,2915794949&fm=26&gp=0.jpg"></image>
+              <view class='icon'></view>
+            </view>
+            <view class='detail'>
+              <view class='userName'>本田 CRV</view>
+              经销商参考价： 15.98-26.68万
+            </view>
+          </swiper-item>
+        </block>
+
+      </swiper>
+      <button bindtap="CarDetect" class='btn' id="camera">
+        <i-icon type="camera_fill" size="28" color="#000" /> 拍照识车
+      </button>
+      <view class='xc' bindtap="CarDetect" id="album">
+        <text>从相册选择></text>
+        {{id}}
+      </view>
+    
+    </view>
+  </view>
+
+
+</view>

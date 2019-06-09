@@ -39,7 +39,7 @@ page{
   padding: 20px;
   text-align: center;
   margin-top: 20rpx;
-  color:#fee38a;
+  color:#000;
 }
 .pic {
   width: 100%;
@@ -48,7 +48,7 @@ page{
   position: relative;
 }
 .pic .img {
-  background: url(https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3863501048,3340669939&fm=26&gp=0.jpg) no-repeat center center;
+  background: url(https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1200020711,1907028745&fm=15&gp=0.jpg) no-repeat center center;
   height: 100%;
   animation: mymove 10s infinite;
   -webkit-animation: mymove 10s infinite;
@@ -93,12 +93,12 @@ page{
   }
 }
 .btn{
-  background: #fee38a;
+  background: #fff;
   width: 50%;
 }
 .xc{
   text-align: center;
-  color:#fee38a;
+  color:#fff;
   font-size: 18px;
   margin-top: 1rem;
 }

@@ -2,13 +2,13 @@
   AI识物 2.0 全新版本，正式上线！
 </i-notice-bar>
 <i-grid>
-  <i-grid-item bindtap="Dishes">
+  <i-grid-item bindtap="Dishes" >
     <i-grid-icon>
       <image src="../images/cp.png" />
     </i-grid-icon>
     <i-grid-label>菜品识别</i-grid-label>
   </i-grid-item>
-  <i-grid-item bindtap="CarDetect">
+  <i-grid-item bindtap="CarDetect" >
     <i-grid-icon>
       <image src="../images/cx.png" />
     </i-grid-icon>

@@ -14,7 +14,9 @@
     "pages/about/about",
     "pages/about/help",
     "pages/foodXk/foodXk",
-    "pages/cpsbIndex/cpsbIndex"
+    "pages/cpsbIndex/cpsbIndex",
+    "pages/cxsbIndex/cxsbIndex",
+    "pages/dwsbIndex/dwsbIndex"
   ],
   "window": {
     "backgroundTextStyle": "light",

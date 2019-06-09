@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+        "i-button": "../../dist/button/index",
+        "i-icon": "../../dist/icon/index"
+  },
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#13a3a4",
+  "navigationBarTitleText": "车型识别",
+  "navigationBarTextStyle": "white"
+}
