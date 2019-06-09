@@ -76,6 +76,7 @@ Page({
         url: "../zwsbIndex/zwsbIndex"
       });
     },
+    //跳转物品识别
     AdvancedGeneral: function(a) {
         wx.chooseImage({
             count: 1,
@@ -104,32 +105,9 @@ Page({
         });
     },
     Face: function(a) {
-        wx.chooseImage({
-            count: 1,
-            sizeType: [ "original", "compressed" ],
-            sourceType: [ "album", "camera" ],
-            success: function(a) {
-                var e = a.tempFilePaths;
-                getApp().globalData.img = e, wx.showLoading({
-                    title: "正在识别"
-                }), wx.uploadFile({
-                  url: "https://wx.wicode.cn/face.ashx",
-                    filePath: e[0],
-                    name: "file",
-                    formData: {
-                        user: "test"
-                    },
-                    success: function(a) {
-                        "0" == a.data ? (wx.showModal({
-                            title: "错误！",
-                            content: "这不是人脸"
-                        }), wx.hideLoading()) : (wx.hideLoading(), wx.navigateTo({
-                            url: "../face/face?list=" + a.data
-                        }));
-                    }
-                });
-            }
-        });
+      wx.navigateTo({
+        url: "../wpsbIndex/wpsbIndex"
+      });
     },
     PhoneInfo: function(a) {
         try {
