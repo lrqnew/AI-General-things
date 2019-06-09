@@ -1,0 +1,32 @@
+<view class='big'>
+  <view class="pic">
+    <view class="img">
+      <swiper class='slid' autoplay="true" interval="2000">
+        <block>
+          <swiper-item >
+            <view class='headView'>
+              <image class='icon' src="http://img4.imgtn.bdimg.com/it/u=3492587028,908199386&fm=26&gp=0.jpg"></image>
+              <view class='icon'></view>
+            </view>
+            <view class='detail'>
+              <view class='userName'>拍照知花草</view>
+              拍照知花草，拍照识别花草，已经收录50000种花草信息，了解花草相关知识。
+            </view>
+          </swiper-item>
+         
+        </block>
+
+      </swiper>
+      <button bindtap="PlantDetect" class='btn' id="camera">
+        <i-icon type="camera_fill" size="28" color="#fff" /> 拍照识别
+      </button>
+      <view class='xc' bindtap="PlantDetect" id="album">
+        <text>从相册选择></text>
+        {{id}}
+      </view>
+    
+    </view>
+  </view>
+
+
+</view>

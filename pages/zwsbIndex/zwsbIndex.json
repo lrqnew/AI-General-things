@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "i-button": "../../dist/button/index",
+    "i-icon": "../../dist/icon/index"
+  },
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#19be6b",
+  "navigationBarTitleText": "植物识别",
+  "navigationBarTextStyle": "white"
+}

@@ -43,7 +43,7 @@ page {
   padding: 20px;
   text-align: center;
   margin-top: 20rpx;
-  color: #000;
+  color: #fff;
 }
 
 .pic {
@@ -51,7 +51,7 @@ page {
   height: 100%;
   overflow: hidden;
   position: relative;
-  background: url(https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1200020711,1907028745&fm=15&gp=0.jpg) no-repeat center center;
+  background: url(http://img5.imgtn.bdimg.com/it/u=1587077160,2694006749&fm=11&gp=0.jpg) no-repeat center center;
   animation: mymove 10s infinite;
   -webkit-animation: mymove 10s infinite;
 }
@@ -112,8 +112,9 @@ page {
 }
 
 .btn {
-  background: #fff;
+  background: #19be6b;
   width: 50%;
+  color: #fff;
 }
 
 .xc {

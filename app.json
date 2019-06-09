@@ -16,7 +16,8 @@
     "pages/foodXk/foodXk",
     "pages/cpsbIndex/cpsbIndex",
     "pages/cxsbIndex/cxsbIndex",
-    "pages/dwsbIndex/dwsbIndex"
+    "pages/dwsbIndex/dwsbIndex",
+    "pages/zwsbIndex/zwsbIndex"
   ],
   "window": {
     "backgroundTextStyle": "light",
