@@ -5,22 +5,22 @@
         <block>
           <swiper-item >
             <view class='headView'>
-              <image class='icon' src="http://img4.imgtn.bdimg.com/it/u=3492587028,908199386&fm=26&gp=0.jpg"></image>
+              <image class='icon' src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1560405881646&di=50387f8927d68023a2533cb3341539b4&imgtype=0&src=http%3A%2F%2F163ed.com%2Fshougong%2Fuploadfiles_4699%2F201207%2F2012070323472080.jpg"></image>
               <view class='icon'></view>
             </view>
             <view class='detail'>
-              <view class='userName'>拍照知花草</view>
-              拍照知花草，拍照识别花草，已经收录50000种花草信息，了解花草相关知识。
+              <view class='userName'>拍照知万物</view>
+              拍照知万物，拍照识别物品，已经收录500000种物品信息，了解万物相关知识。
             </view>
           </swiper-item>
          
         </block>
 
       </swiper>
-      <button bindtap="PlantDetect" class='btn' id="camera">
+      <button bindtap="AdvancedGeneral" class='btn' id="camera">
         <i-icon type="camera_fill" size="28" color="#fff" /> 拍照识别
       </button>
-      <view class='xc' bindtap="PlantDetect" id="album">
+      <view class='xc' bindtap="AdvancedGeneral" id="album">
         <text>从相册选择></text>
         {{id}}
       </view>

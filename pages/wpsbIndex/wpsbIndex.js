@@ -8,9 +8,10 @@ Page({
 
   },
   AdvancedGeneral: function (a) {
+    let types = a.currentTarget.id;
     wx.chooseImage({
       count: 1,
-      sizeType: ["original", "compressed"],
+      sizeType: [types],
       sourceType: ["album", "camera"],
       success: function (a) {
         var e = a.tempFilePaths;

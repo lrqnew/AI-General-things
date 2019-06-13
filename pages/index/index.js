@@ -78,31 +78,9 @@ Page({
     },
     //跳转物品识别
     AdvancedGeneral: function(a) {
-        wx.chooseImage({
-            count: 1,
-            sizeType: [ "original", "compressed" ],
-            sourceType: [ "album", "camera" ],
-            success: function(a) {
-                var e = a.tempFilePaths;
-                getApp().globalData.img = e, wx.showLoading({
-                    title: "正在识别"
-                }), wx.uploadFile({
-                  url: "https://wx.wicode.cn/AdvancedGeneral.ashx",
-                    filePath: e[0],
-                    name: "file",
-                    formData: {
-                        user: "test"
-                    },
-                    success: function(a) {
-                        wx.hideLoading();
-                        a.data;
-                        wx.navigateTo({
-                            url: "../tongyong/tongyong?list=" + a.data
-                        }), console.info(a.data);
-                    }
-                });
-            }
-        });
+      wx.navigateTo({
+        url: '../wpsbIndex/wpsbIndex',
+      })
     },
     Face: function(a) {
       wx.navigateTo({
