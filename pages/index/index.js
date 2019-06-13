@@ -82,34 +82,11 @@ Page({
         url: '../wpsbIndex/wpsbIndex',
       })
     },
-
+    //跳转人脸检测
     Face: function(a) {
-      wx.chooseImage({
-        count: 1,
-        sizeType: ["original", "compressed"],
-        sourceType: ["album", "camera"],
-        success: function (a) {
-          var e = a.tempFilePaths;
-          getApp().globalData.img = e, wx.showLoading({
-            title: "正在识别"
-          }), wx.uploadFile({
-            url: "https://wx.oneint.cn/face.ashx",
-            filePath: e[0],
-            name: "file",
-            formData: {
-              user: "test"
-            },
-            success: function (a) {
-              "0" == a.data ? (wx.showModal({
-                title: "错误！",
-                content: "这不是人脸"
-              }), wx.hideLoading()) : (wx.hideLoading(), wx.navigateTo({
-                url: "../face/face?list=" + a.data
-              }));
-            }
-          });
-        }
-      });
+      wx.navigateTo({
+        url: '../faceIndex/faceIndex',
+      })
     },
     PhoneInfo: function(a) {
         try {

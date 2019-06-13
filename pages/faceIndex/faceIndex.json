@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "i-button": "../../dist/button/index",
+    "i-icon": "../../dist/icon/index"
+  },
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#864251",
+  "navigationBarTitleText": "人脸检测",
+  "navigationBarTextStyle": "white"
+}

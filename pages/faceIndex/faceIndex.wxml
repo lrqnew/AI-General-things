@@ -1,0 +1,32 @@
+<view class='big'>
+  <view class="pic">
+    <view class="img">
+      <swiper class='slid' autoplay="true" interval="2000">
+        <block>
+          <swiper-item >
+            <view class='headView'>
+              <image class='icon' src="http://img3.imgtn.bdimg.com/it/u=3260574443,1660340522&fm=26&gp=0.jpg"></image>
+              <view class='icon'></view>
+            </view>
+            <view class='detail'>
+              <view class='userName'>人脸检测</view>
+              人脸检测，检查你的美。准确率很高！
+            </view>
+          </swiper-item>
+        
+        </block>
+
+      </swiper>
+      <button bindtap="Face" class='btn' id="camera">
+        <i-icon type="camera_fill" size="28" color="#fff" /> 拍照检测
+      </button>
+      <view class='xc' bindtap="Face" id="album">
+        <text>从相册选择></text>
+        {{id}}
+      </view>
+    
+    </view>
+  </view>
+
+
+</view>
