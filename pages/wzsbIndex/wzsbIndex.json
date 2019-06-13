@@ -4,7 +4,7 @@
     "i-icon": "../../dist/icon/index"
   },
   "backgroundTextStyle": "light",
-  "navigationBarBackgroundColor": "#a68677",
+  "navigationBarBackgroundColor": "#3f455d",
   "navigationBarTitleText": "文字识别",
   "navigationBarTextStyle": "white"
 }
