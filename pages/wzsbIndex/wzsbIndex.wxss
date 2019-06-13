@@ -1,0 +1,125 @@
+page {
+  height: 100%;
+}
+
+.headView {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50rpx;
+  height: 300rpx;
+  width: 750rpx;
+  position: relative;
+}
+
+.headView .icon {
+  position: absolute;
+  height: 300rpx;
+  width: 300rpx;
+  border-radius: 50%;
+  border: 30rpx solid #f8f8f9;
+}
+
+.userName {
+  margin: 20rpx 0;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.big {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.slid {
+  height: 60%;
+}
+
+.detail {
+  font-size: 16px;
+  padding: 20px;
+  text-align: center;
+  margin-top: 20rpx;
+  color: #fff;
+}
+
+.pic {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  background: url(https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=390094170,2884815232&fm=15&gp=0.jpg) no-repeat center center;
+  animation: mymove 10s infinite;
+  -webkit-animation: mymove 10s infinite;
+}
+
+.pic .img {
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+@keyframes mymove {
+  0% {
+    background-position: center;
+  }
+
+  25% {
+    background-position: top;
+  }
+
+  50% {
+    background-position: center;
+  }
+
+  75% {
+    background-position: bottom;
+  }
+
+  100% {
+    background-position: center;
+  }
+}
+
+.pic img {
+  position: relative;
+  animation: mymove2 10s infinite;
+  -webkit-animation: mymove2 10s infinite;
+}
+
+@keyframes mymove2 {
+  0% {
+    top: -200px;
+  }
+
+  25% {
+    top: 0;
+  }
+
+  50% {
+    top: -200px;
+  }
+
+  75% {
+    top: -400px;
+  }
+
+  100% {
+    top: -200px;
+  }
+}
+
+.btn {
+  background: #a68677;
+  width: 50%;
+  color: #fff;
+}
+
+.xc {
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  margin-top: 1rem;
+}

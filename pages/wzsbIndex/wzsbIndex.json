@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "i-button": "../../dist/button/index",
+    "i-icon": "../../dist/icon/index"
+  },
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#a68677",
+  "navigationBarTitleText": "文字识别",
+  "navigationBarTextStyle": "white"
+}

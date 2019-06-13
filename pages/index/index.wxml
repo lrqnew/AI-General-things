@@ -42,14 +42,14 @@
   </i-grid-item>
 </i-grid>
 <i-grid>
-  <i-grid-item >
+  <i-grid-item bindtap="bindPickerChange">
    
-    <picker bindchange="bindPickerChange" range="{{array}}" value="{{index}}">
+    <!-- <picker bindchange="bindPickerChange" range="{{array}}" value="{{index}}"> -->
      <i-grid-icon>
       <image src="../images/wz.png" />
     </i-grid-icon>
       <i-grid-label>文字识别</i-grid-label>
-    </picker>
+    <!-- </picker> -->
   </i-grid-item>
   <i-grid-item bindtap="foodXk">
     <i-grid-icon>

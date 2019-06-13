@@ -18,7 +18,8 @@
     "pages/cxsbIndex/cxsbIndex",
     "pages/dwsbIndex/dwsbIndex",
     "pages/zwsbIndex/zwsbIndex",
-    "pages/wpsbIndex/wpsbIndex"
+    "pages/wpsbIndex/wpsbIndex",
+    "pages/wzsbIndex/wzsbIndex"
   ],
   "window": {
     "backgroundTextStyle": "light",
