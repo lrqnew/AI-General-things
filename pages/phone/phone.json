@@ -1,1 +1,10 @@
-{}
+{
+  "usingComponents": {
+    "i-button": "../../dist/button/index",
+    "i-icon": "../../dist/icon/index"
+  },
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#5cadff",
+  "navigationBarTitleText": "手机信息",
+  "navigationBarTextStyle": "white"
+}

@@ -45,5 +45,6 @@
         "selectedIconPath": "pages/images/user3.png"
       }
     ]
-  }
+  },
+  "sitemapLocation": "sitemap23.json"
 }

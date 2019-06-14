@@ -32,7 +32,7 @@
     <i-grid-icon>
       <image src="../images/wp.png" />
     </i-grid-icon>
-    <i-grid-label>物品识别</i-grid-label>
+    <i-grid-label>通用识别</i-grid-label>
   </i-grid-item>
   <i-grid-item bindtap="Face">
     <i-grid-icon>
@@ -51,11 +51,11 @@
       <i-grid-label>文字识别</i-grid-label>
     <!-- </picker> -->
   </i-grid-item>
-  <i-grid-item bindtap="foodXk">
+  <i-grid-item bindtap="PhoneInfo">
     <i-grid-icon>
-      <image src="../images/swxk.png" />
+      <image src="../images/sj.png" />
     </i-grid-icon>
-    <i-grid-label>食物相克</i-grid-label>
+    <i-grid-label>手机信息</i-grid-label>
   </i-grid-item>
   <i-grid-item bindtap="caipu">
     <i-grid-icon>
