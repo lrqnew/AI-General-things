@@ -4,7 +4,7 @@ Page({
     data: {
         list: [],
         image: null,
-        content: null,
+        content:'',
         material: null,
         peoplenum: null,
         preparetime: null,
@@ -31,15 +31,8 @@ Page({
                     peoplenum: e.data.list.peoplenum,
                     preparetime: e.data.list.preparetime,
                     process: e.data.list.process
-                }), console.log(e.data.list), console.log(e.data.list.material);
+                });
             }
         });
-    },
-    onReady: function() {},
-    onShow: function() {},
-    onHide: function() {},
-    onUnload: function() {},
-    onPullDownRefresh: function() {},
-    onReachBottom: function() {},
-    onShareAppMessage: function() {}
+    }
 });
