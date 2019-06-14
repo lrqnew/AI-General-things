@@ -11,8 +11,8 @@ Page({
     let types = a.currentTarget.id;
     wx.chooseImage({
       count: 1,
-      sizeType: [types],
-      sourceType: ["album", "camera"],
+      sizeType: ["original", "compressed"],
+      sourceType: [types],
       success: function (a) {
         var e = a.tempFilePaths;
         getApp().globalData.img = e, wx.showLoading({

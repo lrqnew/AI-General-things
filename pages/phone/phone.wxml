@@ -1,4 +1,4 @@
-<view class="container">
+<!-- <view class="container">
     <view class="info">
         <view class="table">
             <view class="tr">
@@ -62,4 +62,21 @@
             <ad unitId="adunit-88fbcde3edf3dd48"></ad>
         </view>
     </view>
-</view>
+</view> -->
+
+<i-card title="手机品牌" extra="{{brand}}"  thumb="http://img1.imgtn.bdimg.com/it/u=803920110,3366677431&fm=26&gp=0.jpg" full="true">
+    <view slot="content">手机型号：{{model}}</view>
+    <view slot="content">设备像素比：{{pixelRatio}}</view>
+    <view slot="content">屏幕宽度：{{screenWidth}}</view>
+    <view slot="content">屏幕高度：{{screenHeight}} </view>
+    <view slot="content">微信设置的语言：{{language}}</view>
+    <view slot="content">微信版本号：{{version}} </view>
+    <view slot="content">操作系统版本：{{system}}</view>
+    <view slot="content">客户端平台：{{platform}}</view>
+    <view slot="content">用户字体大小：{{fontSizeSetting}}</view>
+    <view slot="content">客户端基础库版本：{{SDKVersion}}</view>
+    <view slot="footer">
+     <ad unitId="adunit-88fbcde3edf3dd48"></ad>
+    </view>
+</i-card>
+ 

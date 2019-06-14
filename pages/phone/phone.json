@@ -1,7 +1,6 @@
 {
   "usingComponents": {
-    "i-button": "../../dist/button/index",
-    "i-icon": "../../dist/icon/index"
+    "i-card": "../../dist/card/index"
   },
   "backgroundTextStyle": "light",
   "navigationBarBackgroundColor": "#5cadff",

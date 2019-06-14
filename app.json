@@ -46,5 +46,8 @@
       }
     ]
   },
-  "sitemapLocation": "sitemap23.json"
+  "sitemapLocation": "sitemap23.json",
+  "navigateToMiniProgramAppIdList": [
+    "wx18a2ac992306a5a4"
+  ]
 }

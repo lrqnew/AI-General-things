@@ -47,8 +47,8 @@ Page({
     }), 
     wx.chooseImage({
       count: 1,
-      sizeType: [types],
-      sourceType: ["album", "camera"],
+      sizeType: ["original", "compressed"],
+      sourceType: [types],
       success: function(a) {
         var t = a.tempFilePaths;
         getApp().globalData.img = t, wx.showLoading({
