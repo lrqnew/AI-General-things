@@ -131,3 +131,8 @@
         <ad unitId="adunit-3c3c05d7e6388f8d"></ad>
     </view>
 </view> -->
+<i-card title="" extra="{{brand}}"   full="true">
+    <view slot="footer">
+     <ad unitId="adunit-88fbcde3edf3dd48"></ad>
+    </view>
+</i-card>

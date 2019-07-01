@@ -6,6 +6,7 @@
     "i-grid-label": "../../dist/grid-label/index",
     "i-tab-bar": "../../dist/tab-bar/index",
     "i-tab-bar-item": "../../dist/tab-bar-item/index",
-    "i-notice-bar": "../../dist/notice-bar/index"
+    "i-notice-bar": "../../dist/notice-bar/index",
+    "i-card": "../../dist/card/index"
   }
 }
