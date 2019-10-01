@@ -17,19 +17,35 @@ Page({
       sourceType: [types],
         success: function(a) {
             var e = a.tempFilePaths;
-            getApp().globalData.img = e, wx.showLoading({
+            getApp().globalData.img = e,
+              wx.showLoading({
                 title: "正在识别"
-            }), wx.uploadFile({
-              url: "https://wx.wicode.cn/DishDetect.ashx",
+              }),
+             wx.uploadFile({
+              url: "http://localhost:4000/api/identify/dishDetect",
                 filePath: e[0],
                 name: "file",
                 formData: {
                     user: "test"
                 },
                 success: function(a) {
-                    wx.hideLoading(), wx.navigateTo({
+                  console.log(a.data)
+                    if(a.data==0){
+                      wx.showToast({
+                        title: '图片含有敏感信息，请重新上传',
+                        icon:'none',
+                        duration:2000
+                      })
+                    }else{
+                     
+                      wx.hideLoading(), wx.navigateTo({
                         url: "../content/content?list=" + a.data
-                    });
+                      });
+                    }
+                   
+                },
+                fail:function(e){
+                   console.log(e)
                 }
             });
         }
