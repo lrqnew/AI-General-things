@@ -18,17 +18,24 @@ Page({
         getApp().globalData.img = e, wx.showLoading({
           title: "正在识别"
         }), wx.uploadFile({
-          url: "https://wx.wicode.cn/AnimalDetect.ashx",
+          url: "https://wx.oneint.cn/api/identify/animalDetect",
           filePath: e[0],
           name: "file",
           formData: {
             user: "test"
           },
           success: function (a) {
+            if (a.data == 0) {
+              wx.showToast({
+                title: '图片含有敏感信息，请重新上传',
+                icon: 'none',
+                duration: 2000
+              })
+            } else {
             wx.hideLoading(), wx.navigateTo({
               url: "../animal/animal?list=" + a.data
             }), console.info(a.data);
-          }
+          }}
         });
       }
     });

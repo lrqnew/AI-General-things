@@ -22,14 +22,13 @@ Page({
                 title: "正在识别"
               }),
              wx.uploadFile({
-              url: "http://localhost:4000/api/identify/dishDetect",
+              url: "https://wx.oneint.cn/api/identify/dishDetect",
                 filePath: e[0],
                 name: "file",
                 formData: {
                     user: "test"
                 },
                 success: function(a) {
-                  console.log(a.data)
                     if(a.data==0){
                       wx.showToast({
                         title: '图片含有敏感信息，请重新上传',

@@ -18,7 +18,7 @@ Page({
         getApp().globalData.img = e, wx.showLoading({
           title: "正在识别"
         }), wx.uploadFile({
-          url: "https://wx.wicode.cn/AdvancedGeneral.ashx",
+          url: "https://wx.oneint.cn/api/identify/advancedGeneral",
           filePath: e[0],
           name: "file",
           formData: {
@@ -27,10 +27,17 @@ Page({
           success: function (a) {
             wx.hideLoading();
             a.data;
+            if (a.data == 0) {
+              wx.showToast({
+                title: '图片含有敏感信息，请重新上传',
+                icon: 'none',
+                duration: 2000
+              })
+            } else {
             wx.navigateTo({
               url: "../tongyong/tongyong?list=" + a.data
             }), console.info(a.data);
-          }
+          }}
         });
       }
     });

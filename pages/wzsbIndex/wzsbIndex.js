@@ -54,17 +54,24 @@ Page({
         getApp().globalData.img = t, wx.showLoading({
           title: "正在识别"
         }), wx.uploadFile({
-          url: "https://wx.wicode.cn/Wenzi.ashx?lang=" + e.data.lang,
+          url: "https://wx.oneint.cn/api/identify/wenzi?lang=" + e.data.lang,
           filePath: t[0],
           name: "file",
           formData: {
             user: "test"
           },
           success: function(a) {
+            if (a.data == 0) {
+              wx.showToast({
+                title: '图片含有敏感信息，请重新上传',
+                icon: 'none',
+                duration: 2000
+              })
+            } else {
             wx.hideLoading(), wx.navigateTo({
               url: "../font/font?list=" + a.data
             }), console.log(a.data);
-          }
+            }}
         });
       }
     });
