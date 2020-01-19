@@ -1,0 +1,61 @@
+<view class="img">
+    <image src="../images/AI.jpg"></image>
+</view>
+<view class="tag">
+    <text class="dot">#</text>
+    <text>关于AI识物</text>
+</view>
+<view class="text">AI识物提供免费、便捷、精准的ocr文字识别服务，将图片转化为可编辑文字，为用户日常输入助力。经过多次版本迭代升级，并加入菜品、植物、动物、车辆识别、人脸检测、菜谱大全，服务更加丰富、趣味，深受广大用户好评。</view>
+<view class="tag">
+    <text class="dot">#</text>
+    <text>赞助</text>
+</view>
+<view class="text">AI识物的使用完全免费，但也需要有相应的资金支持才能持续项目的维护与升级，您可以通过微信来赞助本程序。</view>
+<view class="text">赞助资金将用于服务器维护、程序三期升级计划。</view>
+<view class="cont">
+    <view bindtap="goWx" class="btn">
+        <image mode="widthFix" src="../images/wbchat.png"></image>
+        <text>开发者微信</text>
+    </view>
+    <view bindtap="goZan" class="btn btn2">
+        <image mode="widthFix" src="../images/zan.png"></image>
+        <text>赞助支持</text>
+    </view>
+</view>
+<view class="tag">
+    <text class="dot">#</text>
+    <text>其他</text>
+</view>
+<view class="text">在小程序的使用上，如果您遇到任何问题，或者有任何意见与建议，或者技术上的沟通交流，都可以通过“开发者微信”联系我。</view>
+<view class="text">您如果有网站建设、微信站、微信公众号开发、小程序开发、APP开发等方面的需求，也可以通过“开发者微信”联系我。</view>
+<view class="text">
+    <navigator class="link" url="help">常见问题列表</navigator>
+</view>
+<view class="more">好东西要分享，让更多的人受益</view>
+<view class="cont" style="margin-bottom:80rpx">
+    <view bindtap="onShareAppMessage" class="btn btn3">
+        <image mode="widthFix" src="../images/share2.png"></image>
+        <button openType="share">分享给好友</button>
+    </view>
+    <view style="width:100%;height:100%;padding-top:106rpx;">
+        <ad unitId="adunit-a3e15d2e7fadd38c"></ad>
+    </view>
+</view>
+<view class="overlay" wx:if="{{show}}">
+    <view class="lay">
+        <view>
+            <image mode="widthFix" src="../images/code.jpg"></image>
+        </view>
+        <view class="title">
+            <text>截屏保存二维码，再使用微信扫一扫</text>
+            <text style="color:#999">
+或直接搜索添加
+</text>
+            <text>微信号：liruiqing19970527 </text>
+            <text bindtap="copyWx" class="link">点击复制</text>
+        </view>
+    </view>
+    <view bindtap="close_lay" class="close">
+        <image mode="widthFix" src="../images/close.png"></image>
+    </view>
+</view>

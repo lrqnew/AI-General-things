@@ -1,0 +1,24 @@
+<view class="container">
+    <view class="top">
+        <view class="searchItem">
+            <icon size="20" type="search"></icon>
+            <input bindinput="bindKeyInput" placeholder="请输入菜名"></input>
+        </view>
+        <view class="btn">
+            <button bindtap="search">查询</button>
+        </view>
+    </view>
+</view>
+<view class="schoollist">
+    <view class="school-list" wx:for="{{list}}" wx:key="index">
+        <navigator url="../caipuInfo/caipuInfo?id={{item.id}}">
+            <view class="school-list-info" index="{{index}}">
+                <image class="school-list-photo" src="{{item.pic}}"></image>
+                <text class="school-list-desc">{{item.name}}</text>
+            </view>
+        </navigator>
+    </view>
+    <view style="width:100%;height:100%;padding-top:106rpx;">
+        <ad unitId="adunit-6bd99872b1e9ff1c"></ad>
+    </view>
+</view>
