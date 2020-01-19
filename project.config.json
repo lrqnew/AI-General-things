@@ -1,16 +1,15 @@
-
 {
-  "description": "项目配置文件",
-  "packOptions": {
-    "ignore": []
-  },
-  "compileType": "miniprogram",
-  "appid": "wx2b370ab3723df6a4",
-  "projectname": "AI%E8%AF%86%E7%89%A9",
-  "debugOptions": {
-    "hidedInDevtools": []
-  },
-  "scripts": {},
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"compileType": "miniprogram",
+	"appid": "wx2b370ab3723df6a4",
+	"projectname": "AI%E8%AF%86%E7%89%A9",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"scripts": {},
 	"miniprogramRoot": "miniprogram/",
 	"cloudfunctionRoot": "cloudfunctions/",
 	"setting": {
