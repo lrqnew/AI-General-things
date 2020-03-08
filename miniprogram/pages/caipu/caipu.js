@@ -15,7 +15,7 @@ Page({
         }), wx.request({
             url: "https://way.jd.com/jisuapi/search",
             data: {
-                appkey: "647b4144bbac1fbf97eb52aa60914f88",
+              appkey: "fbe2e3c47fb85ab133e48f1f9f39ad5d",
                 keyword: this.data.inputValue,
                 num: 20
             },
@@ -36,11 +36,4 @@ Page({
       });
       that.search();
     },
-    onReady: function() {},
-    onShow: function() {},
-    onHide: function() {},
-    onUnload: function() {},
-    onPullDownRefresh: function() {},
-    onReachBottom: function() {},
-    onShareAppMessage: function() {}
 });

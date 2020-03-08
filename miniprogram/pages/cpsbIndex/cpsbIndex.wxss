@@ -50,11 +50,12 @@ page{
 .pic .img {
   background: url(https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3863501048,3340669939&fm=26&gp=0.jpg) no-repeat center center;
   height: 100%;
+  background-size: 100% 100%;
   animation: mymove 10s infinite;
   -webkit-animation: mymove 10s infinite;
   
 }
-@keyframes mymove {
+ @keyframes mymove {
   0% {
     background-position: center;
   }
@@ -70,7 +71,7 @@ page{
   100% {
     background-position: center;
   }
-}
+} 
 .pic img {
   position: relative;
   animation: mymove2 10s infinite;

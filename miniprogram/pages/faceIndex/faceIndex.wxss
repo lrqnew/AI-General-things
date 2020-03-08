@@ -53,6 +53,7 @@ page {
   position: relative;
   background: url(http://img2.imgtn.bdimg.com/it/u=3522571769,2342598139&fm=26&gp=0.jpg) no-repeat center center;
   animation: mymove 10s infinite;
+    background-size: 100% 100%;
   -webkit-animation: mymove 10s infinite;
 }
 
