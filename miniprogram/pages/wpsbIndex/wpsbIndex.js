@@ -18,7 +18,7 @@ Page({
         getApp().globalData.img = e, wx.showLoading({
           title: "正在识别"
         }), wx.uploadFile({
-          url: "https://wx.oneint.cn/api/identify/advancedGeneral",
+          url: "http:localhost:4000/api/identify/advancedGeneral",
           filePath: e[0],
           name: "file",
           formData: {
@@ -27,7 +27,8 @@ Page({
           success: function (a) {
             wx.hideLoading();
             a.data;
-            if (a.data == 0) {
+            console.log(a.data)
+            if (a.data === 0) {
               wx.showToast({
                 title: '图片含有敏感信息，请重新上传',
                 icon: 'none',
