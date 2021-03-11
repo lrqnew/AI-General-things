@@ -3,9 +3,9 @@
     <view class="img">
       <swiper class='slid' autoplay="true" interval="2000">
         <block>
-          <swiper-item >
+          <swiper-item>
             <view class='headView'>
-              <image class='icon' src="http://img3.imgtn.bdimg.com/it/u=3260574443,1660340522&fm=26&gp=0.jpg"></image>
+              <image class='icon' src="https://i.loli.net/2021/03/11/qdWFYnHCe28AXpG.jpg"></image>
               <view class='icon'></view>
             </view>
             <view class='detail'>
@@ -15,7 +15,8 @@
           </swiper-item>
           <swiper-item>
             <view class='headView'>
-              <image class='icon' src="http://img5.imgtn.bdimg.com/it/u=4081623527,2435638078&fm=26&gp=0.jpg"></image>
+              <image class='icon' src="https://i.loli.net/2021/03/11/BSXHadO1W6JUFzb.jpg">
+              </image>
               <view class='icon'></view>
             </view>
             <view class='detail'>
@@ -33,7 +34,7 @@
         <text>从相册选择></text>
         {{id}}
       </view>
-    
+
     </view>
   </view>
 

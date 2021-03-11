@@ -5,7 +5,7 @@
         <block>
           <swiper-item>
             <view class='headView'>
-              <image class='icon' src="../../pages/images/cpsb1.jpg"></image>
+              <image class='icon' src="https://i.loli.net/2021/03/10/AovaeSxTpd19wgB.jpg"></image>
               <view class='icon'></view>
             </view>
             <view class='detail'>
@@ -15,7 +15,7 @@
           </swiper-item>
           <swiper-item>
             <view class='headView'>
-              <image class='icon' src="https://gss2.bdstatic.com/9fo3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike150%2C5%2C5%2C150%2C50/sign=e2ede5e06b380cd7f213aabfc02dc651/a6efce1b9d16fdfafdc2dcbeba8f8c5494ee7b37.jpg"></image>
+              <image class='icon' src="https://i.loli.net/2021/03/10/te5NKF8LBrua4RX.jpg"></image>
               <view class='icon'></view>
             </view>
             <view class='detail'>

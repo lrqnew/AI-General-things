@@ -5,7 +5,7 @@
         <block>
           <swiper-item>
             <view class='headView'>
-              <image class='icon' src="../images/x5.jpeg"></image>
+              <image class='icon' src="https://i.loli.net/2021/03/10/6qi5z2lVRyL1tsk.png"></image>
               <view class='icon'></view>
             </view>
             <view class='detail'>
@@ -15,7 +15,7 @@
           </swiper-item>
           <swiper-item>
             <view class='headView'>
-              <image class='icon' src="../images/crv.png"></image>
+              <image class='icon' src="https://i.loli.net/2021/03/10/OcH4QyiqMCbAvt8.jpg"></image>
               <view class='icon'></view>
             </view>
             <view class='detail'>

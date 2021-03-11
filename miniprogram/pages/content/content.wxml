@@ -12,7 +12,7 @@
             </view>
             <view class="tr" wx:for="{{testData}}">
                 <view class="td"> {{item.name}} </view>
-                <view class="td">{{item.calorie}} </view>
+                <view class="td">{{item.calorie?item.calorie:'无'}} </view>
                 <view class="td">{{probability[index]}}%</view>
             </view>
         </view>

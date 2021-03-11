@@ -13,33 +13,38 @@ Page({
       count: 1,
       sizeType: ["original", "compressed"],
       sourceType: [types],
-      success: function (a) {
-        var e = a.tempFilePaths;
-        getApp().globalData.img = e, wx.showLoading({
+      success: res=>{
+        let filePath = res.tempFilePaths[0];
+        getApp().globalData.img = filePath;
+         wx.showLoading({
           title: "正在识别"
-        }), wx.uploadFile({
-          url: "http:localhost:4000/api/identify/advancedGeneral",
-          filePath: e[0],
-          name: "file",
-          formData: {
-            user: "test"
-          },
-          success: function (a) {
-            wx.hideLoading();
-            a.data;
-            console.log(a.data)
-            if (a.data === 0) {
-              wx.showToast({
-                title: '图片含有敏感信息，请重新上传',
-                icon: 'none',
-                duration: 2000
-              })
-            } else {
-            wx.navigateTo({
-              url: "../tongyong/tongyong?list=" + a.data
-            }), console.info(a.data);
-          }}
         });
+        wx.cloud.uploadFile({
+          filePath: filePath, //本地文件路径
+            cloudPath: 'pictureRec/' + Date.now() + '.jpg', //保存在云端的路径及文件名
+            success: res => {
+              let fileID = res.fileID;
+              //调用云函数
+              wx.cloud.callFunction({
+                name: 'pictureRec',
+                data: {
+                  fileID: fileID,
+                  IdentifyType:'advanced'
+                }
+              }).then(res => {
+                wx.hideLoading(), wx.navigateTo({
+                  url: "../tongyong/tongyong?list=" + JSON.stringify(res.result.result)
+                });
+              }).catch(err=>{
+                wx.showToast({
+                  title: '图片含有敏感信息，请重新上传',
+                  icon: 'none',
+                  duration: 2000
+                })
+              })
+            }
+        })
+        
       }
     });
   },

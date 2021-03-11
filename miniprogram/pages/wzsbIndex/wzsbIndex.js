@@ -49,30 +49,58 @@ Page({
       count: 1,
       sizeType: ["original", "compressed"],
       sourceType: [types],
-      success: function(a) {
-        var t = a.tempFilePaths;
-        getApp().globalData.img = t, wx.showLoading({
+      success: res=> {
+        let filePath = res.tempFilePaths[0];
+        getApp().globalData.img = filePath;
+        wx.showLoading({
           title: "正在识别"
-        }), wx.uploadFile({
-          url: "https://wx.oneint.cn/api/identify/wenzi?lang=" + e.data.lang,
-          filePath: t[0],
-          name: "file",
-          formData: {
-            user: "test"
-          },
-          success: function(a) {
-            if (a.data == 0) {
-              wx.showToast({
-                title: '图片含有敏感信息，请重新上传',
-                icon: 'none',
-                duration: 2000
-              })
-            } else {
-            wx.hideLoading(), wx.navigateTo({
-              url: "../font/font?list=" + a.data
-            }), console.log(a.data);
-            }}
         });
+        wx.cloud.uploadFile({
+          filePath: filePath, //本地文件路径
+            cloudPath: 'pictureRec/' + Date.now() + '.jpg', //保存在云端的路径及文件名
+            success: res => {
+              let fileID = res.fileID;
+              //调用云函数
+              wx.cloud.callFunction({
+                name: 'ocr',
+                data: {
+                  fileID: fileID,
+                  lang:e.data.lang
+                }
+              }).then(res => {
+                wx.hideLoading();
+                wx.navigateTo({
+                  url: "../font/font?list=" + JSON.stringify(res.result.words_result)
+                });
+              }).catch(err=>{
+                wx.showToast({
+                  title: '图片含有敏感信息，请重新上传',
+                  icon: 'none',
+                  duration: 2000
+                })
+              })
+            }
+        })
+        // wx.uploadFile({
+        //   url: "https://wx.oneint.cn/api/identify/wenzi?lang=" + e.data.lang,
+        //   filePath: t[0],
+        //   name: "file",
+        //   formData: {
+        //     user: "test"
+        //   },
+        //   success: function(a) {
+        //     if (a.data == 0) {
+        //       wx.showToast({
+        //         title: '图片含有敏感信息，请重新上传',
+        //         icon: 'none',
+        //         duration: 2000
+        //       })
+        //     } else {
+        //     wx.hideLoading(), wx.navigateTo({
+        //       url: "../font/font?list=" + a.data
+        //     }), console.log(a.data);
+        //     }}
+        // });
       }
     });
   },

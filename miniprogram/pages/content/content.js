@@ -7,6 +7,7 @@ Page({
         probability: []
     },
     onLoad: function(t) {
+        console.log(t)
         this.setData({
             testData: JSON.parse(t.list),
             img: getApp().globalData.img

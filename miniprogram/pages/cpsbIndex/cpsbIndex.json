@@ -5,7 +5,7 @@
       "i-icon": "../../dist/icon/index"
   },
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fee38a",
+    "navigationBarBackgroundColor": "#f4b12c",
     "navigationBarTitleText": "菜品识别",
     "navigationBarTextStyle": "white"
   

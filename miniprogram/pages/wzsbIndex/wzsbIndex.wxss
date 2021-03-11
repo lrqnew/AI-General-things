@@ -51,7 +51,7 @@ page {
   height: 100%;
   overflow: hidden;
   position: relative;
-  background: url(https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=319849879,2415641837&fm=26&gp=0.jpg) no-repeat center center;
+  background: url(https://i.loli.net/2021/03/11/7RSvAVKp9WNFdyo.jpg) no-repeat center center;
   animation: mymove 10s infinite;
     background-size: 100% 100%;
   -webkit-animation: mymove 10s infinite;

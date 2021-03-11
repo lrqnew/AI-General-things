@@ -39,7 +39,7 @@ page{
   padding: 20px;
   text-align: center;
   margin-top: 20rpx;
-  color:#fee38a;
+  color:#000;
 }
 .pic {
   width: 100%;
@@ -48,7 +48,7 @@ page{
   position: relative;
 }
 .pic .img {
-  background: url(https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3863501048,3340669939&fm=26&gp=0.jpg) no-repeat center center;
+  background: url(https://i.loli.net/2021/03/10/ov9OrxnDIWjeSut.jpg) no-repeat center center;
   height: 100%;
   background-size: 100% 100%;
   animation: mymove 10s infinite;
@@ -100,7 +100,7 @@ page{
 }
 .xc{
   text-align: center;
-  color:#fee38a;
+  color:#000;
   font-size: 18px;
   margin-top: 1rem;
 }

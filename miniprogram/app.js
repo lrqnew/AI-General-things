@@ -12,6 +12,10 @@ App({
                 });
             }
         });
+        wx.cloud.init({
+            env: 'release-y4pfm', //填写自己的环境ID
+            traceUser: true,
+        })
     },
     globalData: {
         userInfo: null,
